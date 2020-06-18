@@ -332,7 +332,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                       .textTheme
                       .headline
                       .copyWith(
-                      fontSize: 20, color: widget.allResetButonColor),
+                      fontSize: 5, color: widget.allResetButonColor),
                   textAlign: TextAlign.center,
                 ),
               ),
