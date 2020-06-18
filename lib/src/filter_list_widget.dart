@@ -307,7 +307,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                       .textTheme
                       .headline
                       .copyWith(
-                      fontSize: 20, color: widget.allResetButonColor),
+                      fontSize: 16, color: widget.allResetButonColor),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -332,7 +332,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                       .textTheme
                       .headline
                       .copyWith(
-                      fontSize: 5, color: widget.allResetButonColor),
+                      fontSize: 16, color: widget.allResetButonColor),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -356,7 +356,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                       .textTheme
                       .headline
                       .copyWith(
-                      fontSize: 20, color: widget.applyButonTextColor),
+                      fontSize: 16, color: widget.applyButonTextColor),
                   textAlign: TextAlign.center,
                 ),
               ),
