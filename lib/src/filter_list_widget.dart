@@ -279,7 +279,6 @@ class _FilterListWidgetState extends State<FilterListWidget> {
         alignment: Alignment.center,
         child: Row(
           children: <Widget>[
-            Expanded(child: SizedBox()),
             Container(
               decoration: BoxDecoration(
                 color: widget.backgroundColor,
@@ -373,9 +372,6 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                 ],
               ),
             ),
-
-            /// add Bottom space in list
-            Expanded(child: SizedBox()),
           ],
         ),
       ),
