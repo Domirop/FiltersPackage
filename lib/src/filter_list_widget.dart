@@ -337,12 +337,11 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                 ),
               ),
             ),
-            MaterialButton(
+            FlatButton(
               highlightColor: widget.highlightColor,
               splashColor: widget.splashColor,
               color: widget.applyButonTextBackgroundColor,
               padding: widget.applyButtonPadding,
-              elevation: widget.applyButtonElevation,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(25))),
               onPressed: () {
