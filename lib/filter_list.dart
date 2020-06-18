@@ -1,13 +1,13 @@
 library filter_list;
 
-import 'package:filterlist/src/filter_list_widget.dart';
 import 'package:flutter/material.dart';
+
+import 'src/filter_list_widget.dart';
 
 class FilterList {
   static Future<List<String>> showFilterList(context, {
     double height,
     double width,
-    EdgeInsets applyButtonPadding,
     String textSelectedCounts = "Selected items",
     String allButtonText = "All",
     String resetButtonText = "Reset",
@@ -26,7 +26,6 @@ class FilterList {
     Color headerTextColor = Colors.black,
     Color applyButonTextColor = Colors.white,
     Color applyButonTextBackgroundColor = Colors.blue,
-    double applyButtonElevation = 2.0,
     Color splashColor = Colors.transparent,
     Color highlightColor = Colors.transparent,
     Color allResetButonColor = Colors.blue,
@@ -49,9 +48,6 @@ class FilterList {
           .size
           .width;
     }
-    if (applyButtonPadding == null) {
-      applyButtonPadding = EdgeInsets.only(bottom: 5);
-    }
     var list = await showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -64,7 +60,6 @@ class FilterList {
             color: Colors.transparent,
             child: FilterListWidget(
               height: height,
-              applyButtonElevation: applyButtonElevation,
               textSelectedCounts: textSelectedCounts,
               allButtonText: allButtonText,
               splashColor: splashColor,

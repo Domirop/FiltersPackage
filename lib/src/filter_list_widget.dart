@@ -5,10 +5,8 @@ import 'package:flutter/material.dart';
 class FilterListWidget extends StatefulWidget {
   FilterListWidget({
     Key key,
-    this.applyButtonElevation,
     this.splashColor,
     this.highlightColor,
-    this.applyButtonPadding,
     this.textSelectedCounts,
     this.allButtonText,
     this.resetButtonText,
@@ -38,7 +36,6 @@ class FilterListWidget extends StatefulWidget {
     this.hideSelectedTextCount,
   }) : super(key: key);
   final String allButtonText;
-  final EdgeInsets applyButtonPadding;
   final String textSelectedCounts;
   final String resetButtonText;
   final String applyButtonText;
@@ -60,7 +57,6 @@ class FilterListWidget extends StatefulWidget {
   final Color searchFieldBackgroundColor;
   final Color selectedTextBackgroundColor;
   final Color unselectedTextbackGroundColor;
-  final double applyButtonElevation;
   final String headlineText;
   final String searchFieldHintText;
   final bool hideSelectedTextCount;
@@ -342,7 +338,6 @@ class _FilterListWidgetState extends State<FilterListWidget> {
               highlightColor: widget.highlightColor,
               splashColor: widget.splashColor,
               color: widget.applyButonTextBackgroundColor,
-              padding: widget.applyButtonPadding,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(25))),
               onPressed: () {
