@@ -274,8 +274,8 @@ class _FilterListWidgetState extends State<FilterListWidget> {
         width: MediaQuery
             .of(context)
             .size
-            .width * 2,
-        margin: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+            .width,
+        margin: EdgeInsets.symmetric(vertical: 5),
         alignment: Alignment.center,
         child: Row(
           children: <Widget>[
