@@ -271,14 +271,11 @@ class _FilterListWidgetState extends State<FilterListWidget> {
       alignment: Alignment.bottomCenter,
       child: Container(
         height: 45,
-        width: MediaQuery
-            .of(context)
-            .size
-            .width,
         margin: EdgeInsets.symmetric(vertical: 5),
         alignment: Alignment.center,
         child: Row(
           children: <Widget>[
+            Expanded(child: SizedBox()),
             Container(
               decoration: BoxDecoration(
                 color: widget.backgroundColor,
@@ -372,6 +369,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
                 ],
               ),
             ),
+            Expanded(child: SizedBox()),
           ],
         ),
       ),
