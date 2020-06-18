@@ -284,85 +284,80 @@ class _FilterListWidgetState extends State<FilterListWidget> {
           ],
         ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Expanded(
-              child: FlatButton(
-                highlightColor: widget.highlightColor,
-                splashColor: widget.splashColor,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25))),
-                onPressed: () {
-                  setState(
-                        () {
-                      _selectedTextList = List.from(_allTextList);
-                    },
-                  );
-                },
-                child: Container(
-                  height: double.infinity,
-                  alignment: Alignment.center,
-                  child: Text(
-                    widget.allButtonText,
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .headline
-                        .copyWith(
-                        fontSize: 16, color: widget.allResetButonColor),
-                    textAlign: TextAlign.center,
-                  ),
+            FlatButton(
+              highlightColor: widget.highlightColor,
+              splashColor: widget.splashColor,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(25))),
+              onPressed: () {
+                setState(
+                      () {
+                    _selectedTextList = List.from(_allTextList);
+                  },
+                );
+              },
+              child: Container(
+                height: double.infinity,
+                alignment: Alignment.center,
+                child: Text(
+                  widget.allButtonText,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .headline
+                      .copyWith(
+                      fontSize: 16, color: widget.allResetButonColor),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
-            Expanded(
-              child: FlatButton(
-                highlightColor: widget.highlightColor,
-                splashColor: widget.splashColor,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25))),
-                onPressed: () {
-                  setState(() {
-                    _selectedTextList.clear();
-                  });
-                },
-                child: Container(
-                  height: double.infinity,
-                  alignment: Alignment.center,
-                  child: Text(
-                    widget.resetButtonText,
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .headline
-                        .copyWith(
-                        fontSize: 16, color: widget.allResetButonColor),
-                    textAlign: TextAlign.center,
-                  ),
+            FlatButton(
+              highlightColor: widget.highlightColor,
+              splashColor: widget.splashColor,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(25))),
+              onPressed: () {
+                setState(() {
+                  _selectedTextList.clear();
+                });
+              },
+              child: Container(
+                height: double.infinity,
+                alignment: Alignment.center,
+                child: Text(
+                  widget.resetButtonText,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .headline
+                      .copyWith(
+                      fontSize: 16, color: widget.allResetButonColor),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
-            Expanded(
-              child: FlatButton(
-                highlightColor: widget.highlightColor,
-                splashColor: widget.splashColor,
-                color: widget.applyButonTextBackgroundColor,
-                padding: widget.applyButtonPadding,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(25))),
-                onPressed: () {
-                  Navigator.pop(context, _selectedTextList);
-                },
-                child: Center(
-                  child: Text(
-                    widget.applyButtonText,
-                    style: Theme
-                        .of(context)
-                        .textTheme
-                        .headline
-                        .copyWith(
-                        fontSize: 16, color: widget.applyButonTextColor),
-                    textAlign: TextAlign.center,
-                  ),
+            FlatButton(
+              highlightColor: widget.highlightColor,
+              splashColor: widget.splashColor,
+              color: widget.applyButonTextBackgroundColor,
+              padding: widget.applyButtonPadding,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(25))),
+              onPressed: () {
+                Navigator.pop(context, _selectedTextList);
+              },
+              child: Center(
+                child: Text(
+                  widget.applyButtonText,
+                  style: Theme
+                      .of(context)
+                      .textTheme
+                      .headline
+                      .copyWith(
+                      fontSize: 16, color: widget.applyButonTextColor),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
