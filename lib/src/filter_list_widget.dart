@@ -284,7 +284,7 @@ class _FilterListWidgetState extends State<FilterListWidget> {
           ],
         ),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton(
               highlightColor: widget.highlightColor,
